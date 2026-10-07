@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#F4F5F2"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Margin"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
 <title>Margin Notebook</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -418,6 +418,55 @@ a.wl.missing{background:var(--danger-soft);color:var(--danger)}
 .mob-bar{display:none}
 .mob-only{display:none}
 
+/* alternate palettes (Settings → Theme) */
+:root[data-palette="sepia"]{--bg:#F3ECDD;--surface:#FBF7EF;--sunken:#EAE1CE;--raised:#FFFCF6;--line:#DCD0B8;--line-strong:#C8B998;--fg:#2A2117;--fg-2:#4A3D2E;--muted:#7A6A55;--faint:#A8987F;--accent:#1F6E73;--accent-ink:#FFFFFF;--accent-soft:#DCEBE9;--accent-line:#A9CCC9;--mark:#EFD25A;--mark-soft:#F6E9B4;--paper-rule:#E3D8C2;--paper-dot:#CDBF9F}
+@media (prefers-color-scheme:dark){:root[data-palette="sepia"]:not([data-theme="light"]){--bg:#1B1712;--surface:#221D17;--sunken:#15120E;--raised:#2A241D;--line:#352D24;--line-strong:#4A3F33;--fg:#EDE3D2;--fg-2:#CFC2AC;--muted:#9E8F78;--faint:#6E624F;--accent:#7CC5C2;--accent-ink:#0F2524;--accent-soft:#1E3332;--accent-line:#2F5452;--mark:#C9AE3A;--mark-soft:#3A3218;--paper-rule:#2D261E;--paper-dot:#3B3227;color-scheme:dark}}
+:root[data-palette="sepia"][data-theme="dark"]{--bg:#1B1712;--surface:#221D17;--sunken:#15120E;--raised:#2A241D;--line:#352D24;--line-strong:#4A3F33;--fg:#EDE3D2;--fg-2:#CFC2AC;--muted:#9E8F78;--faint:#6E624F;--accent:#7CC5C2;--accent-ink:#0F2524;--accent-soft:#1E3332;--accent-line:#2F5452;--mark:#C9AE3A;--mark-soft:#3A3218;--paper-rule:#2D261E;--paper-dot:#3B3227;color-scheme:dark}
+:root[data-palette="slate"]{--bg:#EDF0F4;--surface:#FFFFFF;--sunken:#E3E8EE;--raised:#FFFFFF;--line:#D5DCE5;--line-strong:#BAC4D1;--fg:#16202B;--fg-2:#344150;--muted:#5F6D7D;--faint:#93A0AF;--accent:#5B4BC4;--accent-ink:#FFFFFF;--accent-soft:#E7E4FA;--accent-line:#C3BCF0;--mark:#F6E46A;--mark-soft:#FBF3BE;--paper-rule:#DDE3EC;--paper-dot:#C3CCD8}
+@media (prefers-color-scheme:dark){:root[data-palette="slate"]:not([data-theme="light"]){--bg:#0E1319;--surface:#141B23;--sunken:#0A0E13;--raised:#1A222C;--line:#232D39;--line-strong:#33404F;--fg:#E3E9F0;--fg-2:#BFC9D4;--muted:#8494A6;--faint:#586677;--accent:#A79CFF;--accent-ink:#14103A;--accent-soft:#221E45;--accent-line:#3A3375;--mark:#C9B33A;--mark-soft:#333019;--paper-rule:#1E2732;--paper-dot:#2A3441;color-scheme:dark}}
+:root[data-palette="slate"][data-theme="dark"]{--bg:#0E1319;--surface:#141B23;--sunken:#0A0E13;--raised:#1A222C;--line:#232D39;--line-strong:#33404F;--fg:#E3E9F0;--fg-2:#BFC9D4;--muted:#8494A6;--faint:#586677;--accent:#A79CFF;--accent-ink:#14103A;--accent-soft:#221E45;--accent-line:#3A3375;--mark:#C9B33A;--mark-soft:#333019;--paper-rule:#1E2732;--paper-dot:#2A3441;color-scheme:dark}
+:root[data-palette="contrast"]{--bg:#FFFFFF;--surface:#FFFFFF;--sunken:#F2F2F2;--raised:#FFFFFF;--line:#8A8A8A;--line-strong:#4D4D4D;--fg:#000000;--fg-2:#111111;--muted:#333333;--faint:#555555;--accent:#0033CC;--accent-ink:#FFFFFF;--accent-soft:#DDE5FF;--accent-line:#0033CC;--mark:#FFE500;--mark-soft:#FFF59A;--paper-rule:#BDBDBD;--paper-dot:#9E9E9E}
+@media (prefers-color-scheme:dark){:root[data-palette="contrast"]:not([data-theme="light"]){--bg:#000000;--surface:#000000;--sunken:#111111;--raised:#0A0A0A;--line:#8A8A8A;--line-strong:#CFCFCF;--fg:#FFFFFF;--fg-2:#F0F0F0;--muted:#D0D0D0;--faint:#AAAAAA;--accent:#FFD400;--accent-ink:#000000;--accent-soft:#332B00;--accent-line:#FFD400;--mark:#FFD400;--mark-soft:#4D4000;--paper-rule:#3A3A3A;--paper-dot:#555555;color-scheme:dark}}
+:root[data-palette="contrast"][data-theme="dark"]{--bg:#000000;--surface:#000000;--sunken:#111111;--raised:#0A0A0A;--line:#8A8A8A;--line-strong:#CFCFCF;--fg:#FFFFFF;--fg-2:#F0F0F0;--muted:#D0D0D0;--faint:#AAAAAA;--accent:#FFD400;--accent-ink:#000000;--accent-soft:#332B00;--accent-line:#FFD400;--mark:#FFD400;--mark-soft:#4D4000;--paper-rule:#3A3A3A;--paper-dot:#555555;color-scheme:dark}
+/* dim surrounding text while writing */
+.dim-focus .rt>*{transition:opacity .25s}
+.dim-focus .rt:focus-within>*:not(.cur){opacity:.3}
+/* theme picker */
+.theme-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;width:100%}
+.theme-opt{display:flex;flex-direction:column;gap:6px;align-items:stretch;padding:6px;border-radius:9px;border:1px solid var(--line);font-size:12.5px;font-weight:500;color:var(--fg-2);min-width:0}
+.theme-opt.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.theme-opt .tp{height:44px;border-radius:6px;display:flex;align-items:flex-end;gap:4px;padding:6px;border:1px solid rgba(0,0,0,.08)}
+.theme-opt .tp i{display:block;width:12px;height:12px;border-radius:50%}
+.theme-opt .tp b{flex:1;height:4px;border-radius:2px;align-self:center}
+/* notebook shelf */
+.shelf{display:flex;gap:10px;overflow-x:auto;padding:12px 2px 6px;align-items:flex-end;scrollbar-width:thin}
+.spine{flex:none;width:56px;border-radius:4px 7px 7px 4px;background:var(--c);color:#fff;display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 0 10px;position:relative;box-shadow:inset 7px 0 0 rgba(0,0,0,.16),inset -1px 0 0 rgba(255,255,255,.2),0 2px 6px rgba(0,0,0,.14);transition:transform .18s ease}
+.spine:hover,.spine:focus-visible{transform:translateY(-8px)}
+.spine::before,.spine::after{content:"";position:absolute;left:7px;right:0;height:2px;background:rgba(255,255,255,.35)}
+.spine::before{top:38px}.spine::after{bottom:30px}
+.spine .ico{opacity:.95}
+.spine .st{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:600;font-size:13.5px;letter-spacing:.02em;flex:1;min-height:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:10px 0 6px;text-shadow:0 1px 1px rgba(0,0,0,.2)}
+.spine .sc{font:11px var(--f-mono);opacity:.85}
+.spine.add{background:none;color:var(--muted);border:1.5px dashed var(--line-strong);box-shadow:none;justify-content:center}
+.spine.add::before,.spine.add::after{display:none}
+.cover-grid{display:flex;flex-wrap:wrap;gap:6px}
+.cover-grid button{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;border:1px solid var(--line);color:var(--fg-2)}
+.cover-grid button.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent);color:var(--accent)}
+.cover-grid .col{border:0}
+.cover-grid .col.on{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--fg)}
+.cover-prev{display:flex;gap:14px;align-items:flex-end}
+/* daily note nav + sync status */
+.day-nav{display:inline-flex;gap:2px;margin-left:4px}
+.day-nav button{font-size:12px;padding:2px 8px;border-radius:20px;border:1px solid var(--line);color:var(--fg-2)}
+.day-nav button:hover{border-color:var(--line-strong)}
+.sync-dot{position:relative}
+.sync-dot::after{content:"";position:absolute;right:5px;top:6px;width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 2px var(--bg)}
+.sync-dot.syncing::after{background:var(--accent);animation:pulse 1s infinite}
+.sync-dot.error::after{background:var(--danger)}
+.sync-box{display:grid;gap:10px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);width:100%}
+.sync-box input{width:100%;height:34px;border:1px solid var(--line);border-radius:6px;padding:0 10px;background:var(--surface);min-width:0}
+.sync-box ol{margin:0;padding-left:18px;font-size:13px;color:var(--fg-2);display:grid;gap:4px}
+.sync-err{color:var(--danger);font-size:13px}
 /* focus mode */
 .app.focus .side,.app.focus .listpane{display:none!important}
 /* ---------- responsive ---------- */
@@ -440,6 +489,7 @@ a.wl.missing{background:var(--danger-soft);color:var(--danger)}
   .quick{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
   .quick button{padding:12px;gap:10px}
   .quick button small{display:none}
+  .theme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .two-col{grid-template-columns:1fr}
   .pdf-thumbs{display:none}
   .mob-bar{display:flex;flex:none;border-top:1px solid var(--line);background:var(--surface);padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px));justify-content:space-around}
@@ -555,12 +605,30 @@ const ICONS = {
   focus: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/><circle cx="12" cy="12" r="2.5"/>',
   paper: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 8h16M4 13h16M4 18h16"/>',
   file: '<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/>',
+  book: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5A2.5 2.5 0 0 1 4 20.5z"/>',
+  cap: '<path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/>',
+  flask: '<path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/>',
+  briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+  heart: '<path d="M12 20s-7.5-4.5-7.5-10A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7.5 3c0 5.5-7.5 10-7.5 10z"/>',
+  star: '<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/>',
+  music: '<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/>',
+  leaf: '<path d="M5 19c0-9 5-14 15-15-1 10-6 15-15 15z"/><path d="M5 19 13 11"/>',
+  camera: '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  today: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/>',
+  cloud: '<path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 8a4 4 0 0 1-.5 10z"/>',
+  wrench: '<path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8-1.3-1.3a4 4 0 0 0-5-5z"/>',
+  palette: '<path d="M12 3a9 9 0 1 0 0 18c1.2 0 1.8-.9 1.4-2-.5-1.3.3-2.5 1.7-2.5H18a3 3 0 0 0 3-3C21 7 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10" cy="7" r="1.2"/><circle cx="15" cy="7.5" r="1.2"/>',
 };
 function icon(name, cls = '') {
   const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('class', 'ico ' + cls); s.setAttribute('aria-hidden', 'true');
   s.innerHTML = ICONS[name] || ICONS.file; return s;
 }
+const NB_ICONS = ['folder', 'book', 'cap', 'flask', 'briefcase', 'heart', 'star', 'music', 'code', 'globe', 'leaf', 'camera', 'calendar', 'inbox', 'pen', 'research'];
+const NB_COLORS = ['#2747C8', '#1F6E73', '#2B7A4B', '#7A6A12', '#B45F06', '#C8342B', '#B0306A', '#7440C0', '#3E4A59', '#69736E'];
+const nbIcon = b => b?.icon || (b?.id === 'nb_inbox' ? 'inbox' : 'folder');
 const TYPE_ICON = { page: 'page', canvas: 'canvas', research: 'research', pdf: 'pdf' };
 const TYPE_NAME = { page: 'Page', canvas: 'Canvas', research: 'Research', pdf: 'PDF' };
 
@@ -731,11 +799,11 @@ const Store = {
     const [notes, kv] = await Promise.all([DB.all('notes'), DB.all('kv')]);
     notes.forEach(n => S.notes.set(n.id, n));
     const meta = Object.fromEntries(kv.map(r => [r.k, r.v]));
-    S.notebooks = meta.notebooks || [];
+    S.notebooks = meta.notebooks || []; S.nbUpdated = meta.nbUpdated || 0;
     if (!meta.seeded) await seed();
     await this.sweep();
   },
-  async saveNotebooks() { await DB.put('kv', { k: 'notebooks', v: S.notebooks }); Ev.emit('nav'); },
+  async saveNotebooks(fromSync) { await DB.put('kv', { k: 'notebooks', v: S.notebooks }); if (!fromSync) { S.nbUpdated = Date.now(); await DB.put('kv', { k: 'nbUpdated', v: S.nbUpdated }); Ev.emit('saved', {}); } Ev.emit('nav'); },
   touch(n, opts = {}) {
     if (!opts.silent) n.updated = Date.now();
     computeDerived(n);
@@ -1387,6 +1455,7 @@ function noteHeader(n, opts = {}) {
     });
     meta.append(ti);
     if (n.pinned) meta.append(h('span', { class: 'chip accent' }, icon('pinFill', 'sm'), 'Pinned'));
+    if (n.daily) meta.append(h('span', { class: 'day-nav' }, h('button', { onclick: () => App.openDaily(n.daily, -1), title: 'Previous day' }, '‹ Previous'), n.daily !== dayKey() ? h('button', { onclick: () => App.openDaily() }, 'Today') : null, h('button', { onclick: () => App.openDaily(n.daily, 1), title: 'Next day' }, 'Next ›')));
     meta.append(h('span', { class: 'mono', style: { marginLeft: 'auto', color: 'var(--faint)' }, title: 'Created ' + fullTime(n.created) }, 'Edited ' + relTime(n.updated)));
   };
   paint();
@@ -1397,8 +1466,8 @@ function noteHeader(n, opts = {}) {
 function notebookMenu(anchor, pick) {
   const items = [{ head: 'Move to notebook' }];
   for (const b of S.notebooks.filter(b => !b.parentId)) {
-    items.push({ label: b.name, icon: b.id === 'nb_inbox' ? 'inbox' : 'folder', fn: () => pick(b.id) });
-    for (const c of S.notebooks.filter(c => c.parentId === b.id)) items.push({ label: '   ' + c.name, icon: 'folder', hint: b.name, fn: () => pick(c.id) });
+    items.push({ label: b.name, icon: nbIcon(b), fn: () => pick(b.id) });
+    for (const c of S.notebooks.filter(c => c.parentId === b.id)) items.push({ label: '   ' + c.name, icon: nbIcon(c), hint: b.name, fn: () => pick(c.id) });
   }
   items.push({ label: 'New notebook…', icon: 'plus', fn: () => App.newNotebook().then(id => id && pick(id)) });
   menu(anchor, items);
@@ -2096,7 +2165,9 @@ const App = {
     Ev.on('saved', n => { if (n.id === S.active) { const s = $('.save-ind'); if (s) s.textContent = 'Saved'; } });
     Ev.on('versions', id => { if (id === S.active && S.inspTab === 'history') this.renderInspBody(); });
     Ev.on('marks', id => { if (id === S.active && S.inspTab === 'marks') this.renderInspBody(); });
-    bindKeys(); bindGlobalDrop();
+    bindKeys(); bindGlobalDrop(); dimFocusWatch(); Sync.init();
+    if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.claude) navigator.serviceWorker.register('sw.js').catch(() => {});
+    addEventListener('beforeinstallprompt', e => { e.preventDefault(); S.installPrompt = e; });
     setInterval(() => Store.sweep(), 10 * 60e3);
     addEventListener('pagehide', () => Store.flushAll());
     document.addEventListener('visibilitychange', () => { if (document.hidden) Store.flushAll(); });
@@ -2126,6 +2197,7 @@ const App = {
     scroll.append(
       h('button', { class: 'capture-btn', onclick: () => Capture.open() }, icon('bolt'), 'Quick capture', h('kbd', {}, 'Alt C')),
       nav('home', 'Home', () => this.showHome(), null, S.view === 'home'),
+      nav('today', 'Today', () => this.openDaily(), null, S.view === 'note' && S.notes.get(S.active)?.daily === dayKey(), 'Alt D'),
       nav('search', 'Search', () => this.showSearch(), null, S.view === 'search', '/'),
       nav('file', 'All notes', () => this.setScope({ kind: 'all' }), live.length, on('all')),
       nav('pin', 'Pinned', () => this.setScope({ kind: 'pinned' }), live.filter(n => n.pinned).length, on('pinned')),
@@ -2134,10 +2206,10 @@ const App = {
     scroll.append(h('div', { class: 'side-sec' }, h('span', { class: 'eyebrow' }, 'Notebooks'), h('button', { title: 'New notebook', 'aria-label': 'New notebook', onclick: () => this.newNotebook() }, icon('plus', 'sm'))));
     const count = id => live.filter(n => n.notebookId === id || nbById(n.notebookId)?.parentId === id).length;
     for (const b of S.notebooks.filter(b => !b.parentId)) {
-      const btn = nav(b.id === 'nb_inbox' ? 'inbox' : 'folder', b.name, () => this.setScope({ kind: 'nb', v: b.id }), count(b.id), on('nb', b.id));
+      const btn = nav(nbIcon(b), b.name, () => this.setScope({ kind: 'nb', v: b.id }), count(b.id), on('nb', b.id));
       btn.firstChild.style.color = b.color; btn.addEventListener('contextmenu', e => { e.preventDefault(); this.nbMenu(b, e); }); scroll.append(btn);
       for (const c of S.notebooks.filter(c => c.parentId === b.id)) {
-        const cb = nav('folder', c.name, () => this.setScope({ kind: 'nb', v: c.id }), count(c.id), on('nb', c.id)); cb.classList.add('nb-child'); cb.firstChild.style.color = c.color;
+        const cb = nav(nbIcon(c), c.name, () => this.setScope({ kind: 'nb', v: c.id }), count(c.id), on('nb', c.id)); cb.classList.add('nb-child'); cb.firstChild.style.color = c.color;
         cb.addEventListener('contextmenu', e => { e.preventDefault(); this.nbMenu(c, e); }); scroll.append(cb);
       }
     }
@@ -2158,11 +2230,34 @@ const App = {
   },
   nbMenu(b, e) {
     menu({ left: e.clientX, right: e.clientX, top: e.clientY, bottom: e.clientY }, [
-      { label: 'Rename…', icon: 'type', fn: () => Ask.text('Rename notebook', b.name).then(v => { if (v) { b.name = v; Store.saveNotebooks(); this.renderList(); } }) },
+      { label: 'Edit name & cover…', icon: 'palette', fn: () => this.editCover(b) },
       !b.parentId ? { label: 'New sub-notebook…', icon: 'plus', fn: () => this.newNotebook(b.id) } : null,
       { label: 'New page here', icon: 'page', fn: () => Store.create('page', { notebookId: b.id }) },
       b.id !== 'nb_inbox' ? { label: 'Delete notebook…', icon: 'trash', fn: () => this.deleteNotebook(b) } : null,
     ].filter(Boolean));
+  },
+  editCover(b) {
+    let color = b.color || NB_COLORS[0], ic = nbIcon(b);
+    const name = h('input', { class: 'btn', id: 'coverName', style: { width: '100%', fontWeight: 400 }, value: b.name, 'aria-label': 'Notebook name' });
+    const prev = h('div', { class: 'cover-prev' }); const cols = h('div', { class: 'cover-grid' }); const ics = h('div', { class: 'cover-grid' });
+    const paint = () => {
+      prev.innerHTML = ''; prev.append(spineEl({ ...b, name: name.value || b.name, color, icon: ic }, '', 150), h('div', { class: 'muted', style: { fontSize: '13px', maxWidth: '260px' } }, 'This is how the notebook looks on your Home shelf and in the sidebar.'));
+      cols.innerHTML = ''; NB_COLORS.forEach(c => cols.append(h('button', { class: 'col' + (c === color ? ' on' : ''), style: { background: c }, 'aria-label': 'Color ' + c, onclick: () => { color = c; paint(); } })));
+      ics.innerHTML = ''; NB_ICONS.forEach(i => ics.append(h('button', { class: i === ic ? 'on' : '', 'aria-label': 'Icon ' + i, title: i, onclick: () => { ic = i; paint(); } }, icon(i))));
+    };
+    name.addEventListener('input', paint); paint();
+    Ask.show('Notebook cover', [name, prev, h('div', { class: 'eyebrow' }, 'Color'), cols, h('div', { class: 'eyebrow' }, 'Icon'), ics],
+      done => h('button', { class: 'btn primary', onclick: () => done(true) }, 'Save')).then(ok => {
+        if (!ok) return; b.name = name.value.trim() || b.name; b.color = color; b.icon = ic; Store.saveNotebooks(); this.renderList(); if (S.view === 'home') this.renderHome();
+      });
+  },
+  openDaily(from, shift = 0) {
+    let d = new Date(); if (from) { const [y, m, dd] = from.split('-').map(Number); d = new Date(y, m - 1, dd); } d.setDate(d.getDate() + shift);
+    const key = dayKey(d); const ex = liveNotes().find(n => n.daily === key);
+    if (ex) return this.open(ex.id);
+    if (!nbById('nb_journal')) { S.notebooks.push({ id: 'nb_journal', name: 'Journal', parentId: null, color: '#1F6E73', icon: 'calendar' }); Store.saveNotebooks(); }
+    const title = d.toLocaleDateString([], { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+    return Store.create('page', { title, daily: key, notebookId: 'nb_journal', tags: ['daily'], body: '<h2>Notes</h2><p><br></p><h2>Tasks</h2><ul class="todo"><li><br></li></ul>' }).then(n => { requestAnimationFrame(() => { const p = $('.rt p', $('#view')); if (p) { p.focus?.(); const r = document.createRange(); r.setStart(p, 0); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } }); return n; });
   },
   async deleteNotebook(b) {
     const ok = await Ask.confirm(`Delete “${b.name}”?`, 'Its notes move to the Inbox. Sub-notebooks are deleted the same way.', 'Delete notebook');
@@ -2175,8 +2270,7 @@ const App = {
   async newNotebook(parentId) {
     const name = await Ask.text(parentId ? 'New sub-notebook' : 'New notebook', '', 'e.g. Thesis, PSYC 301, Recipes');
     if (!name) return null;
-    const colors = ['#2747C8', '#B45F06', '#2B7A4B', '#9B3FAF', '#C8342B', '#1F7A8C', '#7A6A12'];
-    const b = { id: uid('nb_'), name, parentId: parentId || null, color: colors[S.notebooks.length % colors.length] };
+    const b = { id: uid('nb_'), name, parentId: parentId || null, color: NB_COLORS[S.notebooks.length % NB_COLORS.length], icon: 'book' };
     S.notebooks.push(b); await Store.saveNotebooks(); return b.id;
   },
   setScope(sc) { S.scope = sc; S.listQuery = ''; this.renderList(); this.renderNav(); if (innerWidth <= 760) this.mobilePane('list'); },
@@ -2322,6 +2416,7 @@ const App = {
     t0.append(h('div', { class: 'tabs-tools' },
       h('button', { class: 'icon-btn desk-only', title: 'Back (Alt+[)', 'aria-label': 'Back', disabled: S.histPos <= 0, onclick: () => this.histGo(-1) }, icon('chevL')),
       h('button', { class: 'icon-btn desk-only', title: 'Forward (Alt+])', 'aria-label': 'Forward', disabled: S.histPos >= S.hist.length - 1, onclick: () => this.histGo(1) }, icon('chevR')),
+      Sync.on() ? h('button', { class: 'icon-btn sync-dot ' + Sync.status, id: 'syncBtn', title: Sync.label(), 'aria-label': Sync.label(), onclick: () => Sync.run(true) }, icon('cloud')) : null,
       h('button', { class: 'icon-btn', title: `Jump to note (${MOD}+K)`, 'aria-label': 'Jump to note', onclick: () => Palette.open() }, icon('search')),
       h('button', { class: 'icon-btn desk-only', title: 'Focus mode (Alt+\\)', 'aria-label': 'Focus mode', onclick: () => this.toggleFocus() }, icon('focus'))));
     $('.tab.on', t)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
@@ -2445,6 +2540,7 @@ const App = {
       h('button', { class: 'btn', onclick: () => Palette.open() }, icon('search', 'sm'), 'Jump to anything', h('span', { class: 'kbd desk-only' }, MOD + ' K')));
     const q = (ic, t, s, fn) => h('button', { onclick: fn }, h('span', { class: 'qi' }, icon(ic)), h('span', {}, h('b', {}, t), h('small', {}, s)));
     const quick = h('div', { class: 'quick' },
+      q('today', 'Today', now.toLocaleDateString([], { month: 'short', day: 'numeric' }) + ' journal', () => this.openDaily()),
       q('page', 'Page', 'Type and write', () => Store.create('page', {})),
       q('canvas', 'Canvas', 'Infinite whiteboard', () => Store.create('canvas', {})),
       q('research', 'Research', 'Links, quotes, PDFs', () => Store.create('research', {})),
@@ -2454,6 +2550,11 @@ const App = {
     const cards = h('div', { class: 'cards' }, recent.map(n => this.card(n)));
     const sections = [hero, quick];
     if (recent.length) sections.push(h('section', {}, h('div', { class: 'sec-title' }, h('h2', {}, 'Jump back in'), h('span', { class: 'grow' })), cards));
+    const tops = S.notebooks.filter(b => !b.parentId);
+    const shelfCount = id => live.filter(n => n.notebookId === id || nbById(n.notebookId)?.parentId === id).length;
+    sections.push(h('section', {}, h('div', { class: 'sec-title' }, h('h2', {}, 'Notebooks'), h('span', { class: 'grow' }), h('span', { class: 'muted', style: { fontSize: '12px' } }, 'Right-click or long-press to change a cover')),
+      h('div', { class: 'shelf' }, tops.map(b => { const s = spineEl(b, shelfCount(b.id)); s.addEventListener('click', () => this.setScope({ kind: 'nb', v: b.id })); s.addEventListener('contextmenu', e => { e.preventDefault(); this.nbMenu(b, e); }); return s; }),
+        h('button', { class: 'spine add', style: { height: '150px' }, 'aria-label': 'New notebook', title: 'New notebook', onclick: () => this.newNotebook() }, icon('plus')))));
     const pinned = live.filter(n => n.pinned).sort((a, b) => b.updated - a.updated);
     const left = h('div', {}); const right = h('div', { style: { display: 'grid', gap: '28px', alignContent: 'start' } });
     // activity timeline
@@ -2568,6 +2669,7 @@ const Palette = {
     document.body.append(this.el);
     let items = [], idx = 0;
     const cmds = () => [
+      ['Today’s note', 'today', () => App.openDaily()], ['Sync now', 'cloud', () => Sync.on() ? Sync.run(true) : Settings.open()], ['Change theme', 'palette', () => Settings.open()],
       ['New page', 'page', () => Store.create('page', {})], ['New canvas', 'canvas', () => Store.create('canvas', {})], ['New research note', 'research', () => Store.create('research', {})],
       ['New scratch note', 'scratch', () => App.newScratch()], ['Import PDF', 'pdf', () => App.pickPdf()], ['Quick capture', 'bolt', () => Capture.open()],
       ['Go to Home', 'home', () => App.showHome()], ['Search everything', 'search', () => App.showSearch()], ['Open Trash', 'trash', () => App.setScope({ kind: 'trash' })],
@@ -2671,7 +2773,24 @@ function applyTheme() {
   const t = Prefs.get('theme', 'system'); const r = document.documentElement;
   if (t === 'system') delete r.dataset.theme; else r.dataset.theme = t;
   r.classList.toggle('sans-notes', Prefs.get('noteFont', 'serif') === 'sans');
-  App.ed?.L?.render?.();
+  const p = Prefs.get('palette', 'graphite'); if (p === 'graphite') delete r.dataset.palette; else r.dataset.palette = p;
+  r.classList.toggle('dim-focus', !!Prefs.get('dimFocus', false));
+  requestAnimationFrame(() => { const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = getComputedStyle(r).getPropertyValue('--bg').trim(); App.ed?.L?.render?.(); if (S.view === 'home') App.renderHome?.(); });
+}
+const THEMES = [['graphite', 'Graphite', '#F4F5F2', '#2747C8', '#1A1E1C'], ['sepia', 'Sepia', '#F3ECDD', '#1F6E73', '#2A2117'], ['slate', 'Slate', '#EDF0F4', '#5B4BC4', '#16202B'], ['contrast', 'High contrast', '#FFFFFF', '#0033CC', '#000000']];
+function dayKey(d = new Date()) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function spineEl(b, count, hgt) {
+  let hsh = 0; for (const ch of b.name || '') hsh = (hsh * 31 + ch.charCodeAt(0)) >>> 0;
+  const el = h('button', { class: 'spine', style: { height: (hgt || 150 + hsh % 34) + 'px' }, title: b.name, 'aria-label': `${b.name}, ${count} notes` }, icon(nbIcon(b), 'sm'), h('span', { class: 'st' }, b.name), h('span', { class: 'sc' }, count));
+  el.style.setProperty('--c', b.color || NB_COLORS[0]); return el;
+}
+function dimFocusWatch() {
+  document.addEventListener('selectionchange', () => {
+    if (!document.documentElement.classList.contains('dim-focus')) return;
+    const s = getSelection(); let n = s.anchorNode; if (n?.nodeType === 3) n = n.parentNode;
+    const rt = n?.closest?.('.rt'); $$('.rt > .cur').forEach(x => x.classList.remove('cur'));
+    if (!rt) return; while (n && n.parentNode !== rt) n = n.parentNode; n?.classList?.add('cur');
+  });
 }
 const Settings = {
   async open() {
@@ -2682,11 +2801,17 @@ const Settings = {
     const modal = h('div', { class: 'modal', role: 'dialog', 'aria-label': 'Settings' },
       h('div', { class: 'modal-h' }, icon('settings'), h('h3', {}, 'Settings'), h('button', { class: 'icon-btn', 'aria-label': 'Close', onclick: () => el.remove() }, icon('x'))),
       h('div', { class: 'modal-b' },
-        row('Appearance', null, seg('theme', [['system', 'System'], ['light', 'Light'], ['dark', 'Dark']], 'system', applyTheme)),
+        row('Theme', null, (() => { const g = h('div', { class: 'theme-grid' }); const paint = () => { g.innerHTML = ''; THEMES.forEach(([k, l, bg, ac, fg]) => g.append(h('button', { class: 'theme-opt' + (Prefs.get('palette', 'graphite') === k ? ' on' : ''), onclick: () => { Prefs.set('palette', k); applyTheme(); paint(); } }, h('span', { class: 'tp', style: { background: bg } }, h('i', { style: { background: ac } }), h('b', { style: { background: fg } })), l))); }; paint(); return g; })()),
+        row('Light or dark', null, seg('theme', [['system', 'System'], ['light', 'Light'], ['dark', 'Dark']], 'system', applyTheme)),
+        row('Dim surrounding text', 'While you type, everything except the current paragraph fades back.', seg('dimFocus', [[false, 'Off'], [true, 'On']], false, applyTheme)),
         row('Note typeface', 'Serif reads like a book; sans is denser.', seg('noteFont', [['serif', 'Serif'], ['sans', 'Sans']], 'serif', applyTheme)),
         row('Stylus always draws', 'A pen writes ink even while the Type tool is selected. Fingers keep scrolling.', seg('penAlwaysDraws', [[true, 'On'], [false, 'Off']], true)),
         row('Opening notes', 'Open each note in a new tab, or reuse the current tab.', seg('reuseTab', [[false, 'New tab'], [true, 'Reuse tab']], false)),
         row('Scratch notes expire after', null, seg('scratchDays', [[1, '1 day'], [3, '3 days'], [7, '7 days'], [30, '30 days']], 7)),
+        h('hr', { style: { border: 0, borderTop: '1px solid var(--line)', margin: 0, width: '100%' } }),
+        Sync.settingsPanel(),
+        row('Install as an app', S.installPrompt ? 'Adds Margin to your home screen or dock with its own icon. Works offline.' : (window.claude ? 'Install from the GitHub Pages version of Margin.' : 'In Chrome: ⋮ → Add to Home screen (phone) or Install (computer). In Safari: Share → Add to Home Screen.'),
+          S.installPrompt ? h('button', { class: 'btn sm primary', onclick: async () => { S.installPrompt.prompt(); await S.installPrompt.userChoice.catch(() => {}); S.installPrompt = null; } }, icon('download', 'sm'), 'Install') : null),
         h('hr', { style: { border: 0, borderTop: '1px solid var(--line)', margin: 0, width: '100%' } }),
         row('Your data', (S.persistent ? 'Notes, PDFs and recordings are stored in this browser on this device. ' : 'Storage is blocked in this window. ') + est + ' Back up regularly to keep a copy elsewhere.',
           h('div', { style: { display: 'flex', gap: '6px', flexWrap: 'wrap' } }, h('button', { class: 'btn sm', onclick: () => Exporter.backup() }, icon('download', 'sm'), 'Back up'), h('button', { class: 'btn sm', onclick: () => restoreIn.click() }, icon('upload', 'sm'), 'Restore…'), restoreIn)),
@@ -2720,6 +2845,7 @@ function bindKeys() {
       const go = f => { e.preventDefault(); f(); };
       if (code === 'KeyC') return go(() => Capture.open());
       if (code === 'KeyN') return go(() => Store.create('page', {}));
+      if (code === 'KeyD') return go(() => App.openDaily());
       if (code === 'KeyS') return go(() => App.newScratch());
       if (code === 'KeyH') return go(() => App.showHome());
       if (code === 'KeyF') return go(() => App.showSearch());
@@ -2730,6 +2856,7 @@ function bindKeys() {
       if (code === 'Backslash') return go(() => App.toggleFocus());
       if (/^Digit[1-9]$/.test(code)) return go(() => { const id = S.tabs[+code.slice(5) - 1]; id && App.open(id, { noHist: false }); });
     }
+    if (e.key === 'Escape' && $('.scrim') && !e.defaultPrevented) { const sc = $$('.scrim').pop(); if (sc === Palette.el) Palette.close(); else if (sc === Capture.el) Capture.close(); else sc.remove(); return; }
     if (Palette.el || Capture.el || $('.scrim')) return;
     if (mod && code === 'KeyZ' && !typing && App.ed) { e.preventDefault(); e.shiftKey ? App.ed.redo?.() : App.ed.undo?.(); return; }
     if (typing || mod || e.altKey) return;
@@ -2762,6 +2889,200 @@ async function importFiles(files) {
     else toast(`“${f.name}” isn’t a type Margin can import.`);
   }
 }
+/* =========================================================
+   Sync: notes, files and notebooks <-> a private GitHub repo.
+   One commit per sync via the Git Data API. Last edit wins per note;
+   the losing side is kept in that note's version history.
+   ========================================================= */
+const Sync = {
+  status: 'idle', last: 0, err: '', running: false, again: false,
+  cfg() { return Prefs.get('sync', null); },
+  on() { return !!this.cfg()?.token; },
+  label() {
+    if (this.status === 'syncing') return 'Syncing…';
+    if (this.status === 'error') return 'Sync problem: ' + this.err + ' — tap to retry';
+    return this.last ? 'Synced ' + relTime(this.last) + ' — tap to sync now' : 'Tap to sync now';
+  },
+  init() {
+    this.last = Prefs.get('syncLast', 0);
+    const later = debounce(() => this.run(), 15000);
+    Ev.on('saved', () => this.on() && later());
+    document.addEventListener('visibilitychange', () => { if (this.on()) { if (document.hidden) { later.cancel(); this.run(); } else if (Date.now() - this.last > 60e3) this.run(); } });
+    setInterval(() => { if (this.on() && !document.hidden) this.run(); }, 3 * 60e3);
+    if (this.on()) setTimeout(() => this.run(), 1500);
+  },
+  paint() {
+    const b = $('#syncBtn'); if (b) { b.className = 'icon-btn sync-dot ' + this.status; b.title = this.label(); b.setAttribute('aria-label', this.label()); }
+    const p = $('#syncPanelStatus'); if (p) p.textContent = this.label().replace(' — tap to sync now', '').replace(' — tap to retry', '');
+  },
+  async api(path, opt = {}) {
+    const c = this.cfg();
+    const r = await fetch('https://api.github.com' + path, {
+      method: opt.method || 'GET', cache: 'no-store',
+      headers: { Authorization: 'Bearer ' + c.token, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', ...(opt.body ? { 'Content-Type': 'application/json' } : {}) },
+      body: opt.body ? JSON.stringify(opt.body) : undefined,
+    });
+    if (!r.ok) { let m = ''; try { m = (await r.json()).message; } catch (e) {} const err = new Error(m || ('HTTP ' + r.status)); err.status = r.status; throw err; }
+    return r.status === 204 ? null : r.json();
+  },
+  async connect(repo, token) {
+    repo = repo.trim().replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '').replace(/\/$/, '');
+    if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) throw new Error('Enter the repo as owner/name, for example jlyle/notez-data.');
+    Prefs.set('sync', { repo, token: token.trim() });
+    let info;
+    try { info = await this.api('/repos/' + repo); }
+    catch (e) { Prefs.set('sync', null); throw new Error(e.status === 401 ? 'GitHub didn’t accept that token.' : e.status === 404 ? 'Repo not found, or the token can’t see it.' : e.message); }
+    if (info.permissions && !info.permissions.push) { Prefs.set('sync', null); throw new Error('That token can read the repo but can’t write to it. Give it Contents: Read and write.'); }
+    if (!info.private && !(await Ask.confirm('This repo is public', 'Anyone could read your notes there. Sync anyway? A private repo is strongly recommended.', 'Sync anyway'))) { Prefs.set('sync', null); throw new Error('Not connected. Make the repo private, then try again.'); }
+    Prefs.set('sync', { repo, token: token.trim(), branch: info.default_branch || 'main' });
+    await DB.put('kv', { k: 'syncState', v: null });
+    await this.run(true);
+  },
+  async disconnect() { Prefs.set('sync', null); Prefs.set('syncLast', 0); this.last = 0; await DB.put('kv', { k: 'syncState', v: null }); this.status = 'idle'; App.renderTabs(); toast('Sync turned off on this device. Your notes stay here and in the repo.'); },
+  async run(manual) {
+    if (!this.on()) return;
+    if (this.running) { this.again = true; return; }
+    if (!navigator.onLine) { this.status = 'error'; this.err = 'offline'; this.paint(); return; }
+    this.running = true; this.status = 'syncing'; this.paint();
+    try {
+      let res;
+      try { res = await this._sync(); } catch (e) { if (e.retry) res = await this._sync(); else throw e; }
+      this.status = 'idle'; this.err = ''; this.last = Date.now(); Prefs.set('syncLast', this.last);
+      if (manual) toast(res.pulled || res.pushed ? `Synced — ${res.pulled} in, ${res.pushed} out` : 'Everything is up to date');
+    } catch (e) {
+      console.warn('sync', e); this.status = 'error';
+      this.err = e.status === 401 ? 'token expired or revoked' : e.status === 403 ? 'not allowed (check token permissions)' : e.status === 404 ? 'repo not found' : (e.message || 'unknown error');
+      if (manual) toast('Sync failed: ' + this.err);
+    } finally {
+      this.running = false; this.paint();
+      if (this.again) { this.again = false; setTimeout(() => this.run(), 500); }
+    }
+  },
+  /* base64 helpers */
+  b64FromText(t) { return this.b64FromBytes(new TextEncoder().encode(t)); },
+  b64FromBytes(u8) { let s = ''; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000)); return btoa(s); },
+  bytesFromB64(b) { const s = atob(b.replace(/\s/g, '')); const u = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i); return u; },
+  async getBytes(sha) { const c = this.cfg(); const r = await this.api(`/repos/${c.repo}/git/blobs/${sha}`); return this.bytesFromB64(r.content); },
+  async _sync() {
+    const { repo, branch = 'main' } = this.cfg(); const A = (p, o) => this.api(`/repos/${repo}${p}`, o);
+    await Store.flushAll();
+    const st = (await DB.get('kv', 'syncState'))?.v || { shas: {}, upd: {}, meta: null };
+    let ref;
+    try { ref = await A(`/git/ref/heads/${branch}`); }
+    catch (e) {
+      if (e.status !== 404 && e.status !== 409) throw e;
+      await A('/contents/README.md', { method: 'PUT', body: { message: 'Start Margin sync', branch, content: this.b64FromText('# Margin notes\n\nPrivate data synced by Margin Notebook. Please don’t edit these files by hand.\n') } });
+      ref = await A(`/git/ref/heads/${branch}`);
+    }
+    const headSha = ref.object.sha; const commit = await A(`/git/commits/${headSha}`);
+    const tree = await A(`/git/trees/${commit.tree.sha}?recursive=1`);
+    const rNotes = {}, rBlobs = {}; let rMeta = null; const fresh = !st.joined;
+    for (const t of tree.tree) {
+      let m;
+      if ((m = t.path.match(/^margin\/notes\/(n_[a-z0-9]+)\.json$/))) rNotes[m[1]] = t.sha;
+      else if ((m = t.path.match(/^margin\/files\/(b_[a-z0-9]+)$/))) rBlobs[m[1]] = t.sha;
+      else if (t.path === 'margin/meta.json') rMeta = t.sha;
+    }
+    /* joining a repo that already has notes: drop this device's untouched sample notes so they don't duplicate */
+    if (fresh && rMeta) for (const n of [...S.notes.values()]) if (n.sample && n.updated === n.sampleUpd && !st.shas[n.id]) { S.notes.delete(n.id); await DB.del('notes', n.id); }
+    st.joined = true;
+    const writes = []; let pulled = 0, pushed = 0; const pulledIds = [];
+    const ids = new Set([...Object.keys(rNotes), ...Object.keys(st.shas), ...S.notes.keys()]);
+    for (const id of ids) {
+      const rs = rNotes[id], base = st.shas[id], local = S.notes.get(id);
+      const localChanged = !!local && (base === undefined || local.updated !== st.upd[id]);
+      const remoteChanged = !!rs && rs !== base;
+      const pull = async () => {
+        const n = JSON.parse(new TextDecoder().decode(await this.getBytes(rs)));
+        if (local && localChanged) await Versions.add(local, 'Before sync replaced it');
+        S.notes.set(id, n); await DB.put('notes', n); st.shas[id] = rs; st.upd[id] = n.updated; pulled++; pulledIds.push(id);
+      };
+      const push = () => { writes.push({ path: `margin/notes/${id}.json`, text: JSON.stringify(local), id, upd: local.updated }); };
+      if (remoteChanged && !localChanged) await pull();
+      else if (remoteChanged && localChanged) {
+        const remote = JSON.parse(new TextDecoder().decode(await this.getBytes(rs)));
+        if ((remote.updated || 0) > (local.updated || 0)) await pull(); else push();
+      }
+      else if (local && localChanged) push();
+      else if (!rs && local && base !== undefined && !localChanged) { S.notes.delete(id); await DB.del('notes', id); delete st.shas[id]; delete st.upd[id]; pulled++; pulledIds.push(id); }
+      else if (rs && !local && base !== undefined && base === rs) { writes.push({ path: `margin/notes/${id}.json`, del: true, id }); }
+      else if (!rs && !local) { delete st.shas[id]; delete st.upd[id]; }
+    }
+    /* notebooks + file metadata */
+    let remoteMeta = { notebooks: [], nbUpdated: 0, files: {} };
+    if (rMeta) { try { remoteMeta = JSON.parse(new TextDecoder().decode(await this.getBytes(rMeta))); } catch (e) {} }
+    const localNb = S.notebooks, remoteNb = remoteMeta.notebooks || [];
+    const useRemote = (remoteMeta.nbUpdated || 0) > (S.nbUpdated || 0) && rMeta !== st.meta;
+    const primary = useRemote ? remoteNb : localNb, other = useRemote ? localNb : remoteNb;
+    const merged = [...primary.map(b => ({ ...b })), ...other.filter(b => !primary.some(p => p.id === b.id)).map(b => ({ ...b }))];
+    const nbChanged = JSON.stringify(merged) !== JSON.stringify(localNb);
+    if (nbChanged) { S.notebooks = merged; await Store.saveNotebooks(true); }
+    /* files (PDFs, images, audio) */
+    const files = { ...(remoteMeta.files || {}) }; const need = new Set();
+    for (const n of S.notes.values()) blobRefs(n).forEach(b => need.add(b));
+    for (const b of need) {
+      if (rBlobs[b]) { if (!(await DB.get('blobs', b))) { const bytes = await this.getBytes(rBlobs[b]); const meta = files[b] || {}; await DB.put('blobs', { id: b, blob: new Blob([bytes], { type: meta.type || '' }), type: meta.type || '', name: meta.name || '', size: bytes.length, created: Date.now() }); } }
+      else { const r = await DB.get('blobs', b); if (r) { writes.push({ path: `margin/files/${b}`, bytes: new Uint8Array(await r.blob.arrayBuffer()) }); files[b] = { type: r.type, name: r.name, size: r.size }; } }
+    }
+    const metaOut = { format: 1, notebooks: S.notebooks, nbUpdated: Math.max(S.nbUpdated || 0, remoteMeta.nbUpdated || 0), files };
+    const metaChanged = !rMeta || JSON.stringify(metaOut) !== JSON.stringify(remoteMeta);
+    if (metaChanged) writes.push({ path: 'margin/meta.json', text: JSON.stringify(metaOut), meta: true });
+    /* one commit for everything this device changed */
+    let newMetaSha = rMeta;
+    if (writes.length) {
+      const entries = [];
+      for (const w of writes) {
+        if (w.del) { entries.push({ path: w.path, mode: '100644', type: 'blob', sha: null }); continue; }
+        const b = await A('/git/blobs', { method: 'POST', body: { content: w.bytes ? this.b64FromBytes(w.bytes) : this.b64FromText(w.text), encoding: 'base64' } });
+        entries.push({ path: w.path, mode: '100644', type: 'blob', sha: b.sha }); w.sha = b.sha;
+      }
+      const nt = await A('/git/trees', { method: 'POST', body: { base_tree: commit.tree.sha, tree: entries } });
+      const noteCount = writes.filter(w => w.id).length;
+      const nc = await A('/git/commits', { method: 'POST', body: { message: `Sync ${noteCount} note${noteCount === 1 ? '' : 's'} from ${deviceName()}`, tree: nt.sha, parents: [headSha] } });
+      try { await A(`/git/refs/heads/${branch}`, { method: 'PATCH', body: { sha: nc.sha } }); }
+      catch (e) { if (e.status === 422 || e.status === 409) { const r = new Error('changed during sync'); r.retry = true; throw r; } throw e; }
+      for (const w of writes) {
+        if (w.del) { delete st.shas[w.id]; delete st.upd[w.id]; }
+        else if (w.id) { st.shas[w.id] = w.sha; st.upd[w.id] = w.upd; pushed++; }
+        else if (w.meta) newMetaSha = w.sha;
+      }
+    }
+    st.meta = newMetaSha;
+    await DB.put('kv', { k: 'syncState', v: st });
+    if (pulled || nbChanged) {
+      Ev.emit('changed', {}); App.renderNav(); App.renderList(); App.renderTabs();
+      if (S.view === 'home') App.renderHome();
+      if (S.view === 'note' && pulledIds.includes(S.active)) { if (S.notes.get(S.active)) App.reloadEditor(); else App.closeTab(S.active); }
+    }
+    return { pulled, pushed };
+  },
+  settingsPanel() {
+    const box = h('div', { class: 'sync-box' });
+    const c = this.cfg();
+    if (window.claude) {
+      box.append(h('b', { style: { fontWeight: 500 } }, 'Sync between devices'), h('small', { class: 'muted' }, 'Sync works in your installed copy of Margin (GitHub Pages). It can’t reach GitHub from inside Claude.'));
+      return box;
+    }
+    if (c?.token) {
+      box.append(h('div', { class: 'set-row' }, h('div', {}, h('b', { style: { fontWeight: 500 } }, 'Syncing with ' + c.repo), h('small', { id: 'syncPanelStatus' }, this.label().replace(/ — tap.*$/, ''))),
+        h('div', { style: { display: 'flex', gap: '6px' } }, h('button', { class: 'btn sm primary', onclick: () => this.run(true) }, icon('cloud', 'sm'), 'Sync now'), h('button', { class: 'btn sm', onclick: async () => { if (await Ask.confirm('Turn off sync on this device?', 'Notes already here stay here, and the copy in GitHub is untouched.', 'Turn off')) { this.disconnect(); box.replaceWith(this.settingsPanel()); } } }, 'Turn off'))));
+      return box;
+    }
+    const repo = h('input', { id: 'syncRepo', placeholder: 'owner/repo, e.g. jlyle/notez-data', autocomplete: 'off', 'aria-label': 'Repository' });
+    const tok = h('input', { id: 'syncToken', type: 'password', placeholder: 'github_pat_…', autocomplete: 'off', 'aria-label': 'GitHub token' });
+    const err = h('div', { class: 'sync-err', hidden: true });
+    const go = h('button', { class: 'btn sm primary', onclick: async () => {
+      err.hidden = true; go.disabled = true; go.textContent = 'Connecting…';
+      try { await this.connect(repo.value, tok.value); App.renderTabs(); box.replaceWith(this.settingsPanel()); toast('Sync is on for this device'); }
+      catch (e) { err.textContent = e.message; err.hidden = false; go.disabled = false; go.textContent = 'Connect'; }
+    } }, 'Connect');
+    box.append(h('b', { style: { fontWeight: 500 } }, 'Sync between devices'),
+      h('ol', {}, h('li', {}, 'Create a private repo for your notes, e.g. notez-data.'), h('li', {}, 'Create a fine-grained token that can only access that repo, with Contents: Read and write.'), h('li', {}, 'Paste both here. Repeat on each device with the same repo.')),
+      repo, tok, err, h('div', { style: { display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' } }, go, h('small', { class: 'muted', style: { flex: 1, minWidth: '180px' } }, 'The token is kept only in this browser.')));
+    return box;
+  },
+};
+function deviceName() { const u = navigator.userAgent; return /iPad/.test(u) ? 'iPad' : /iPhone/.test(u) ? 'iPhone' : /Android/.test(u) ? 'Android' : /Mac/.test(u) ? 'Mac' : /Windows/.test(u) ? 'Windows' : /Linux/.test(u) ? 'Linux' : 'a device'; }
 /* =========================================================
    Export, backup/restore, Markdown conversion, sample notes, boot
    ========================================================= */
@@ -3041,7 +3362,7 @@ async function seed() {
     { id: id.s1, type: 'page', title: 'Call the landlord about the radiator', notebookId: 'nb_inbox', tags: ['scratch'], expires: now + 2 * 86400e3, updated: now - 3 * H, opened: now - 3 * H, created: now - 3 * H, paper: 'plain', body: '<p>Bedroom one only heats on the left side. Ask about the bleed valve before winter.</p>', ink: [] },
     { id: id.s2, type: 'page', title: 'Idea: bus-stop countdown on the lock screen', notebookId: 'nb_inbox', tags: ['scratch'], expires: now + 5 * H, updated: now - 50 * 60e3, opened: now - 50 * 60e3, created: now - 50 * 60e3, paper: 'plain', body: '<p>Only show the next two buses. No app to open.</p>', ink: [] },
   ];
-  for (const raw of notes) { const n = Object.assign(newNote(raw.type), raw); computeDerived(n); S.notes.set(n.id, n); await DB.put('notes', n); }
+  for (const raw of notes) { const n = Object.assign(newNote(raw.type), raw, { sample: true }); n.sampleUpd = n.updated; computeDerived(n); S.notes.set(n.id, n); await DB.put('notes', n); }
   await DB.put('kv', { k: 'notebooks', v: S.notebooks }); await DB.put('kv', { k: 'seeded', v: true });
 }
 
